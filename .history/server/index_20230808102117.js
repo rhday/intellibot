@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 
 app.use('/api/v1/post', postRoutes);
-app.use('/api/v1/intelliBot', IntelliBotRoutes);
+app.use('/api/v1/intelliBot', intelliBotRoutes);
 
 app.get('/', async (req, res) => {
   res.send(

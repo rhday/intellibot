@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 
 app.use('/api/v1/post', postRoutes);
-app.use('/api/v1/intelliBot', IntelliBotRoutes);
+app.use('/api/v1/dalle', dalleRoutes);
 
 app.get('/', async (req, res) => {
   res.send(
@@ -24,7 +24,7 @@ app.get('/', async (req, res) => {
 const startServer = async () => {
   try {
     connectDB(process.env.MONGODB_URL);
-    app.listen(8080, () => console.log('** Congratulations! The server has started. **'));
+    app.listen(8080, () => console.log('Congratulations! Server has started.'));
   } catch (error) {
     console.log(error);
   }
