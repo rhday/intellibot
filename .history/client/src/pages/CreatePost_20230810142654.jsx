@@ -34,7 +34,7 @@ const CreatePost = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            prompt: form.prompt,
+            prompt: form.prompt
           }),
         });
 
@@ -65,7 +65,7 @@ const CreatePost = () => {
         });
 
         await response.json();
-        alert('Success!');
+        
         navigate('/');
       } catch (err) {
         alert(err);
