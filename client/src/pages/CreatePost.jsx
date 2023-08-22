@@ -80,8 +80,8 @@ const CreatePost = () => {
   return (
     <section className="max-w-7xl mx-auto">
       <div>
-        <h1 className="font-extrabold text-[#ffff] text-[32px]">Create</h1>
-        <p className="mt-2 text-[#63f7ff] text-[14px] max-w-[500px]">Generate an imaginative image and share it with the community</p>
+        <h1 className="font-extrabold text-[#ffff] text-[32px]">Create an AI image here.</h1>
+        <p className="mt-2 text-[#63f7ff] text-[14px] max-w-[500px]">Generate an imaginative image and share it with the community just by filling out the form below and pressing "Generate."<br />If you're struggling to find an idea you want to generate then hit the "Surprise me" button to generate a randomn prompt.</p>
       </div>
 
       <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>

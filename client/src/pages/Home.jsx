@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Card, FormField, Loader } from '../components';
 
@@ -63,7 +64,12 @@ const Home = () => {
   return (
     <section className="max-w-7xl mx-auto">
       <div>
-        <h1 className="font-extrabold text-white text-[32px]">The Community Showcase</h1>
+        <h1 className="font-extrabold text-white text-[32px]">IntelliBot(BETA). An AI image generation tool.</h1>
+        <p className="mt-2 text-[#63f7ff] text-[14px] max-w-[500px]">Built for everyone to create AI images without any knowledge of Artificial Intelligence. Please browse images already created below or press the "Create" button to start creating images of your own.</p>
+        <button className='mt-10 mb-10'><Link to="/create-post" className="font-inter font-medium bg-[#63f7ff] text-black px-4 py-2 rounded-md">Create</Link></button>
+      </div>
+      <div>
+        <h2 className="font-bold mt-10 text-white text-[26px]">The Community Showcase</h2>
         <p className="mt-2 text-[#63f7ff] text-[14px] max-w-[500px]">Welcome to the top posts today!</p>
       </div>
 
@@ -87,7 +93,7 @@ const Home = () => {
           <>
             {searchText && (
               <h2 className="font-medium text-[#63f7ff] text-xl mb-3">
-                Showing Resuls for <span className="text-[#63f7ff]">{searchText}</span>:
+                Showing Results for <span className="text-[#63f7ff]">{searchText}</span>:
               </h2>
             )}
             <div className="grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
